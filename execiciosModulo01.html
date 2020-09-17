@@ -12,7 +12,8 @@
         Exercícios: Módulo 01
         </h2>
         <script>
-
+        
+        console.log("Exercício 01");
         var endereco = {
         rua: "Rua dos pinheiros",
         numero: 1293,
@@ -29,6 +30,30 @@
         address += ('\" com nº ' + endereco.numero);
         console.log(address);         
 
+        console.log("Exercício 02");
+        
+        function pares(x, y) {
+            for(i=x; i<=y; i++){
+                if(i%2 == 0){
+                     console.log("Número Par: " + i);
+                }
+            }
+        }
+        pares(32, 321);
+        
+        console.log("Exercício 03");
+
+        function temHabilidade(skills) {
+            
+            if(skills.includes("Javascript")){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        console.log(temHabilidade(skills)); // true ou false
 
         </script>
     </body>
