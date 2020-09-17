@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>
             Curso de JavaScript
         </title>
@@ -101,10 +102,39 @@
             masculino = sexo === 'M';
             console.log(masculino);
 
+            //CONDIÇÃO TERNÁRIA
+            var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+            console.log(retorno);
 
+            //ESTRUTURAS DE REPETIÇÃO
+           /*
+           for(var i=0; i<=100; i++){
+                console.log(i);
+           }
+           
+            var j = 0;
+            while(j < 100){
+                console.log(j);
+                j++;
+            }
+            */
+            //INTERVALO E TIMEOUT
+            //função que executa várias vezes dentro de um intervalo
 
+            function exibeAlgo(){
+                console.log('Hello World');
+            }
 
+            //executa a função com um intervalo de 1 segundo
+            /*não usa o parenteses pois se colocar já vai executar a função*/
+            /*para referenciar a função (repassar o escopo dela), não sua o parênteses*/
+            
+            //setInterval(exibeAlgo, 1000);
 
+            /*executa o scrip apenas uma vez e dá um dalay antes de executar novamente*/
+           
+            //setTimeout(exibeAlgo, 1000);
+        
         </script>
     </body>
 </html>
